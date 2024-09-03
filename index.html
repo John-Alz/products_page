@@ -21,8 +21,15 @@
                 <a href="#">Favoritos</a>
             </ul>
             <div id="container_logos_header">
-                <a href="#"><img id="logo_cart" src="./assets/icons/cart.svg" alt=""></a>
-                <a href="#"><img id="logo_profile" src="./assets/icons/profile-round-1342-svgrepo-com.svg" alt=""></a>
+                <form id="form" action="subm">
+                    <input id="input_search" type="text" placeholder="Buscar">
+                    <button value="" type="submit" id="btn_search"><img src="./assets/icons/search.svg" alt="logoseacrh"></button>
+                </form>
+                <div class="logos_cart_profile">
+                    <a href="#"><img id="logo_cart" src="./assets/icons/cart.svg" alt=""></a>
+                    <a href="#"><img id="logo_profile" src="./assets/icons/profile-round-1342-svgrepo-com.svg" alt=""></a>
+                </div>
+                
             </div>
         </nav>
     </header>
@@ -47,12 +54,21 @@
             <section id="filters">
                 <div id="conatiner_filters">
                     <div id="categories">
-                        <p onclick="filterCategorie()">Lifestyle</p>
+                        <!-- <p>Todas</p>
+                        <p>Lifestyle</p>
                         <p>Jordan</p>
                         <p>Baloncesto</p>
                         <p>Futbol</p>
                         <p>Gym y training</p>
-                        <p>caminar</p>
+                        <p>caminar</p> -->
+
+                        <button value="all">Todas</button>
+                        <button value="Lifestyle">Lifestyle</button>
+                        <button value="Jordan">Jordan</button>
+                        <button value="Baloncesto">Baloncesto</button>
+                        <button value="Futbol">Futbol</button>
+                        <button value="Gym y training">Gym y training</button>
+                        <button value="Caminar">Caminar</button>
                     </div>
                     <div id="filter_sex">
                         <h2>Sexo</h2>

@@ -48,7 +48,43 @@ ul a:hover {
 
 #container_logos_header {
     display: flex;
-    gap: 30px;
+    gap: 50px;
+    align-items: center;
+}
+
+form {
+    position: relative;
+}
+
+
+form input {
+    padding: 10px;
+    border: 1px solid #F5F5F5;
+    background: #F5F5F5;
+    border-radius: 50px 0 0 50px;
+    font-family: var(--primary-font);
+    font-weight: bold;
+}
+
+form button {
+    background: transparent;
+    border: none;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding: 5px;
+    border-radius: 0 50px 50px 0;
+    position: absolute;
+    cursor: pointer;
+    
+}
+
+form img{
+    width: 24px;
+}
+
+.logos_cart_profile{
+    display: flex;
+    gap: 20px;
 }
 
 #logo_cart,
@@ -123,12 +159,28 @@ main {
 
 
 
-#categories p {
+/* #categories p {
     font-family: var(--primary-font);
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
     cursor: pointer;
+} */
+
+#categories {
+    display: flex;
+    flex-direction: column;
+}
+
+#categories button {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: left;
+    background: transparent;
+    border: none;
 }
 
 #filter_sex {
